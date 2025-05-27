@@ -1,3 +1,41 @@
+/* this is goated https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 body {
+    background-color: blanchedalmond;
     font-family: 'Outfit', sans-serif;
+}
+
+.whole{
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    align-items: flex-end;
+    border: 3px black;
+}
+
+#header{
+    align-self: flex-start;
+}
+
+.bottom{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: flex-start;
+    border: 3px black;
+}
+
+.section{
+    display: flex;
+    align-items: flex-end;
+}
+
+#pfp{
+    border: 3px rgb(230, 70, 123);
+    border-radius: 50%;
+    border-style: solid;
 }
