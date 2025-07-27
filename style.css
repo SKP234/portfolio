@@ -13,27 +13,49 @@ body {
 
 .top{ /*holds the pfp, name, and link to github*/
     display: flex;
-    margin-top: 30vh; /*spaces it from the top to make it centered towards the top*/
+    margin-top: 25vh; /*spaces it from the top to make it centered towards the top*/
     justify-content: center; /*center horizontally*/
     align-items: center; /*centers vertically, mostly for the name and link*/
     gap: 5vh;
+}
+
+.middle{ /*text for project*/
+    display: flex;
+    justify-content: center; /*center horizontally*/
+    font-size: 2.5em; /*bigger text*/
+    margin-top: 5vh; /*spaces from the top*/
 }
 
 
 .bottom{ /*holds all the projects*/
     display: flex;
     justify-content: center; /*center horizontally*/
-    margin-top: 5vh; /*spaces from the top*/
     flex-wrap: wrap; /*if too many projects horizontally, then it wraps around*/
     gap: 15px; /*spaces between each project*/
+    margin-top: 3vh; /*spaces from the top*/
 }
 
-.projects{ /*class for each project*/
+.project{ /*class for each project*/
     display: flex;
-    width: 300px;
+    width: 400px;
     height: 200px;
     background-color: lightblue;
     border-radius: 25px; /*curved corners*/
+    padding: 15px; /*spaces text from edges*/
+    flex-direction: column; /*name and desc on top of each other*/
+    gap: 5px;
+}
+
+.projectname{
+    display: flex;
+    font-weight: bold;
+}
+.projectdesc{
+    font-size: 0.6em; /*smaller text*/
+}
+.projectrepo{
+    align-self: flex-end; /*aligns to the right*/
+    margin-top: auto; /*aligns to the bottom*/
 }
 
 #top-desc{
@@ -42,6 +64,6 @@ body {
 }
 
 #pfp{
-    border: 3px solid rgb(230, 70, 123);
+    border: 3px solid black;
     border-radius: 50%; /*circle border*/
 }
